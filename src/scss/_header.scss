@@ -1,7 +1,6 @@
 header {
-  position: relative;
+  position: relative; /* Assure que les éléments absolument positionnés soient relatifs au header */
   text-align: center;
-  padding: 20px;
   color: #ffffff;
 }
 
@@ -11,29 +10,54 @@ header {
   display: block;
 }
 
+.header-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .header-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  bottom: 58px; /* Place le contenu vers le bas du header */
+  left: 201px; /* Aligne le contenu à gauche */
+  text-align: left; /* Texte aligné à gauche */
+}
+
+.furieuse-logo {
+  width: 300px; /* Ajuste la taille selon tes besoins */
+  height: auto;
+  fill: #ffffff; /* Assure-toi que le texte du SVG est bien en blanc */
+  margin-bottom: 10px; /* Un léger espacement en bas si nécessaire */
 }
 
 h1 {
-  font-family: "YourHeaderFont", sans-serif; /* Remplace par la police de caractères */
+  font-family: "Bokor", system-ui;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
 .cta-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   padding: 10px 20px;
   background-color: #ff4747;
   color: #ffffff;
   border: none;
-  cursor: pointer;
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cta-button:hover {
+  background-color: #ffffff; /* Couleur de fond blanche */
+  color: #ff4747; /* Couleur du texte rouge */
 }
 
 .subtitle {

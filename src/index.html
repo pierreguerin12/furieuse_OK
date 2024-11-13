@@ -5,6 +5,12 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bokor&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -14,24 +20,85 @@
         class="header-background"
       />
       <div class="header-content">
-        <h1>Furieuse</h1>
-        <button class="cta-button">Acheter la BD</button>
-      </div>
-      <p class="subtitle">un ouvrage de Mathieu Burniat et Geoffroy Monde</p>
+        <img
+          src="img/furieuse-blanc-logo.svg"
+          alt="Furieuse logo blanc"
+          class="header-logo"
+        />
     </header>
-    <footer>
-      <div class="footer-content">
-        <p class="publisher">DARGAUD</p>
-        <div class="footer-links">
-          <a href="#" class="social-link">Instagram</a>
-          <a href="#" class="social-link">Twitter</a>
-          <a href="#" class="social-link">Facebook</a>
+    <img
+    src="img/fond_degrade_rn.svg"
+    alt="fond degrade rn"
+    class="background-rougenoir"
+  />
+</div>
+<a href="#footer" class="cta-button">Acheter la BD</a>
+<p class="subtitle">un ouvrage de Mathieu Burniat et Geoffroy Monde</p>
+    <div class="vertical-scroll">
+      <div class="intro-section">
+        <h1>BRISER LES CHAÎNES, ECRASER LE POUVOIR</h1>
+      </div>
+      <div class="horizontal-scroll">
+        <div class="container">
+          <div class="box">
+            <img src="img/carousel-1.svg" alt="photo 1 carousel" />
+          </div>
+          <div class="container">
+            <div class="box">
+              <img src="img/carousel-2.svg" alt="photo 2 carousel" />
+            </div>
+            <div class="container">
+              <div class="box">
+                <img src="img/carousel-2.svg" alt="photo 2 carousel" />
+              </div>
+          <div class="container">
+                <div class="box">
+                  <img src="img/carousel-2.svg" alt="photo 2 carousel" />
+                </div>
+            <div class="container">
+          <div class="box">
+               <img src="img/carousel-2.svg" alt="photo 2 carousel" />
+               </div>
+           <div class="container">
+        <div class="box">
+        <img src="img/carousel-2.svg" alt="photo 2 carousel" />
+          </div>
         </div>
-        <div class="footer-info">
-          <a href="#">conditions générales</a> |
-          <a href="#">politique de confidentialité</a>
+      </div>
+      <div class="outro-section">
+        <h1>FINI DE SE FAIRE ECRASER !</h1>
+      </div>
+    </div>
+    <footer class="container-py-4">
+      <div class="row">
+        <!-- Section gauche : Icônes sociales, logo Dargaud et Politique de confidentialité -->
+        <div class="col-12">
+          <img src="img/dargaud.svg" alt="Dargaud Logo" />
         </div>
-        <p>&copy; Dargaud 2024. All rights reserved</p>
+        <div class="row">
+        <div class="col-3 d-flex align-items-center">
+          <a href="https://instagram.com" target="_blank" class="me-2">
+            <img src="img/instagram.svg" alt="Instagram" class="social-icon" />
+          </a>
+          <a href="https://x.com" target="_blank" class="me-2">
+            <img src="img/x-icone.svg" alt="X" class="social-icon" />
+          </a>
+          <a href="https://facebook.com" target="_blank" class="me-2">
+            <img src="img/facebook.svg" alt="Facebook" class="social-icon" />
+          </a>
+          <div class="col-6"></div>
+          <div class="col-3">
+          <p>conditions générales</p>
+          <div class="row">
+          <a href="#privacy-policy" class="footer-link ms-3"
+            >Politique de confidentialité</a
+          >
+        </div>
+        <!-- Section droite : Droits d'auteur et CGU -->
+        <div class="col-6 d-flex justify-content-end align-items-center text-end">
+          <p class="mb-0 me-3">©Dargaud 2024 - All rights reserved</p>
+          <a href="#terms" class="footer-link">Conditions générales</a>
+      </div>
       </div>
     </footer>
     <script src="js/main.js" type="module"></script>
