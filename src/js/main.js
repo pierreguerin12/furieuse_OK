@@ -7,8 +7,12 @@ window.addEventListener("DOMContentLoaded", function () {
   //ajout du plugin ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to(".container", {
-    xPercent: -67,
+  const screenWidth = window.screen.width;
+  const containerWidth =
+    document.querySelector(".scroll-container").offsetWidth;
+  console.log(screenWidth, containerWidth);
+  gsap.to(".scroll-container", {
+    x: screenWidth - containerWidth,
     ease: "none",
     scrollTrigger: {
       trigger: ".horizontal-scroll",

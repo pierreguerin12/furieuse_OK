@@ -1,0 +1,111 @@
+.fond-rougenoir {
+  background: linear-gradient(180deg, #e93f56 1.31%, #050e0b 71.93%);
+}
+
+.vertical-scroll {
+  font-family: Arial, sans-serif;
+}
+
+.intro-section,
+.outro-section {
+  height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scroll-container {
+  display: inline-flex; /* Alignement horizontal pour une rangée continue */
+  height: 100vh;
+  position: relative; /* Occupe toute la hauteur de la fenêtre pour rester cohérent avec .intro-section et .outre-section */
+}
+
+.horizontal-scroll {
+  height: 100vh; /* Fixe la hauteur à la hauteur de la fenêtre comme les autres */
+  overflow: hidden; /* Pas de défilement vertical à l'interiéur de cette class */
+}
+
+.box {
+  min-width: 300svw; /* Pour que la box soit large et qu'il y ai de la surface pour le défilement horizontal au scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 20px;
+}
+
+#carousel1 {
+  position: absolute;
+  top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 20px;
+}
+
+#carousel2 {
+  position: absolute;
+  top: 380px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 500px;
+}
+
+#carousel3 {
+  position: absolute;
+  top: 0px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 980px;
+}
+
+#carousel4 {
+  position: absolute;
+  top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 800px;
+}
+
+#carousel5 {
+  position: absolute;
+  top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 1400px;
+}
+
+#carousel6 {
+  position: absolute;
+  top: 500px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 2800px;
+}
+
+#carousel7 {
+  position: absolute;
+  top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 4000px;
+}
+
+.h2-briser {
+  color: var(--white, #fff);
+  text-align: center;
+  padding: 170px 150px 150px 80px;
+
+  /* bokor 128 */
+  font-family: Bokor;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 153.6px */
+  text-transform: uppercase;
+}
+
+.h2-fini {
+  color: var(--rouge-rose, #e93f56);
+  text-align: center;
+
+  /* bokor 128 */
+  font-family: Bokor;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 153.6px */
+  text-transform: uppercase;
+}
+
+.background-rougenoir {
+  width: 100%;
+  height: auto;
+  display: block;
+}
