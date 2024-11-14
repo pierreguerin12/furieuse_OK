@@ -1,0 +1,87 @@
+.section-bd {
+  background-color: black;
+  padding: 60px 40px; /* Espace autour de la section */
+  border-top: 2px solid #e0e0e0;
+}
+
+.bd-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px; /* Espace entre l'image et le contenu */
+}
+
+.bd-image {
+  flex: 1 1 40%; /* Largeur de la colonne image */
+  padding-right: 20px; /* Ajuste le padding pour correspondre à la maquette */
+}
+
+.bd-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bd-content {
+  flex: 1 1 60%; /* Largeur de la colonne texte */
+  padding-left: 20px;
+}
+
+.bd-title {
+  color: var(--white, #fff);
+  font-family: Bokor;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bd-description {
+  color: var(--white, #fff);
+  font-family: "Bricolage Grotesque";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.bd-isbn {
+  color: var(--white, #fff);
+
+  /* bricolage 18 */
+  font-family: "Bricolage Grotesque";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 42px;
+}
+
+.buy-button {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff4747;
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-size: 48px;
+  font-style: normal;
+  width: 267px;
+  height: 83px;
+  flex-shrink: 0;
+}
+
+.buy-button:hover {
+  background-color: #fff;
+  color: #ff5733;
+}

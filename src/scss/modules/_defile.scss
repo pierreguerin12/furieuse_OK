@@ -87,7 +87,7 @@
 .h2-briser {
   color: var(--white, #fff);
   text-align: center;
-  padding: 170px 150px 150px 80px;
+  padding: 100px 150px 120px 80px;
 
   /* bokor 128 */
   font-family: Bokor;
@@ -116,4 +116,14 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.subtitle {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 20px;
+  margin: -1px;
 }
