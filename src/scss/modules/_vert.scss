@@ -1,0 +1,42 @@
+.fond-vert {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vert {
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 2821px;
+  width: 99vw;
+}
+
+.vert1 {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  width: 752px;
+  height: 826px;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.vert2 {
+  position: absolute;
+  right: 19%;
+  top: 28%;
+  width: 450px;
+  height: 927px;
+}
+
+.vert3 {
+  position: absolute;
+  left: 29%;
+  top: 59%;
+  width: 768px;
+  height: 565px;
+}

@@ -1,12 +1,10 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+//Initialisation du plugin ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("DOMContentLoaded", function () {
-  //ajout du plugin ScrollTrigger
-  gsap.registerPlugin(ScrollTrigger);
-
   const screenWidth = window.screen.width;
   const containerWidth =
     document.querySelector(".scroll-container").offsetWidth;
@@ -47,4 +45,49 @@ window.addEventListener("DOMContentLoaded", function () {
 
   //Ce PoC a été testé sur Firefox, Chrome et Safari et fonctionne de la même manière sur chaque moteur de recherche.
   //Grâce à l'utilisation des "%", ce Poc est responsive et fonctionne sur différenttes tailles d'écran.
+
+  // Faire apparaitre les différents éléments en modifiant leur position et leur opacité quand ils entrent dans l'écran de l'utilisateur. Les éléments sont tout d'abord placés en dehors de l'écran, puis viennent se regrouper vers le milieu de celui-ci en se positionnant en cascade.
+
+  //Dans scrollTrigger on a configuré le déclenchement de l'animation.
+
+  //Les éléments 1 et 3 arrivent depuis la gauche, d'où le paramètre "left" et l'élément 2 arrive depuis la droite, d'ou le "right".
+
+  //Le "start: "top bottom"" signifie que l'animation commencera lorsque le haut des éléments "box" atteignent le bas de la fenêtre de visualisation.
+
+  // "scrub:true" synchronise l'animation avec le défilement, donc elle avance ou recule en fonction du déplacement de la page.
+
+  // ces paramètres sont répétés sur chacune des 3 box.
+
+  gsap.from(".vert1", {
+    left: "0",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".vert1",
+      start: "top top",
+      end: "+=20%",
+      scrub: true,
+    },
+  });
+
+  gsap.from(".vert2", {
+    right: "0",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".vert2",
+      start: "top bottom",
+      scrub: true,
+    },
+  });
+
+  gsap.from(".vert3", {
+    left: "0",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".vert3",
+      start: "top bottom",
+      scrub: true,
+    },
+  });
+
+  //En résumé, ce code crée des animations d'apparition au scroll pour les 3 éléments box, qui seront remplacés par des images dans notre projet, en utilisant le défilement de la page comme déclencheur. Chaque élément apparaît progressivement en se déplaçant depuis la gauche ou la droite de l'écran tout en augmentant son opacité, avec un effet fluide qui suit le défilement. Ce PoC a été testé sur les différents navigateurs demandés et fonctionne sur ces trois.
 });
