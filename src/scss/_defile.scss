@@ -39,42 +39,49 @@
   position: absolute;
   top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
   left: 20px;
+  z-index: 7;
 }
 
 #carousel2 {
   position: absolute;
   top: 380px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 500px;
+  left: 470px;
+  z-index: 6;
 }
 
 #carousel3 {
   position: absolute;
   top: 0px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 980px;
+  left: 950px;
+  z-index: 5;
 }
 
 #carousel4 {
   position: absolute;
-  top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 800px;
+  top: 440px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 1250px;
+  z-index: 4;
 }
 
 #carousel5 {
   position: absolute;
   top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 1400px;
+  left: 1680px;
+  z-index: 3;
 }
 
 #carousel6 {
   position: absolute;
-  top: 500px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 2800px;
+  top: 0px; /* Ajuste la distance par rapport au haut du conteneur */
+  left: 2180px;
+  z-index: 2;
 }
 
 #carousel7 {
   position: absolute;
   top: 50px; /* Ajuste la distance par rapport au haut du conteneur */
-  left: 4000px;
+  left: 2500px;
+  z-index: 1;
 }
 
 .h2-briser {
@@ -102,6 +109,7 @@
   font-weight: 400;
   line-height: 120%; /* 153.6px */
   text-transform: uppercase;
+  padding: 170px 150px 150px 80px;
 }
 
 .background-rougenoir {

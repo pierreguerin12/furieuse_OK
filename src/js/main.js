@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".scroll-container").offsetWidth;
   console.log(screenWidth, containerWidth);
   gsap.to(".scroll-container", {
-    x: screenWidth - containerWidth,
+    x: containerWidth - screenWidth,
     ease: "none",
     scrollTrigger: {
       trigger: ".horizontal-scroll",
